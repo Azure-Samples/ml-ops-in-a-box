@@ -90,7 +90,7 @@ jobs:
 
 # Test phase
     - name: Use Python version 3.7
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@v5
       with:
         python-version: '3.8'
 

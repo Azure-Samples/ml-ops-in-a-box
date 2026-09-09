@@ -74,7 +74,7 @@ jobs:
       run: az extension add -n ml -y
 
     - name: Azure login
-      uses: azure/login@v1
+      uses: azure/login@cb79c773a3cfa27f31f25eb3f677781210c9ce3d # v1.6.1
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
 
@@ -90,7 +90,7 @@ jobs:
 
 # Test phase
     - name: Use Python version 3.7
-      uses: actions/setup-python@v3
+      uses: actions/setup-python@3542bca2639a428e1796aaa6a2ffef0c0f575566 # v3.1.4
       with:
         python-version: '3.8'
 
